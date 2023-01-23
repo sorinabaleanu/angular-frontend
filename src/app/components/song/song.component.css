@@ -1,0 +1,33 @@
+
+
+mat-card-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+mat-card-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+mat-card-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+
+button {
+    font-size: 20px;
+}
+
+.card-wrapper{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

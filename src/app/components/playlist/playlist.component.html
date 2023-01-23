@@ -1,0 +1,26 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{element.name}}</td>
+    </ng-container>
+  
+    <!-- Artist Column -->
+    <ng-container matColumnDef="artist">
+      <th mat-header-cell *matHeaderCellDef>Artist</th>
+      <td mat-cell *matCellDef="let element">{{element.artist.name}}</td>
+    </ng-container>
+  
+    <!-- Duration Column -->
+    <ng-container matColumnDef="symbol">
+      <th mat-header-cell *matHeaderCellDef>Duration</th>
+      <td mat-cell *matCellDef="let element">{{element.symbol}}</td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="viewSongDetails(row)"></tr>
+  </table>
+  
+ 

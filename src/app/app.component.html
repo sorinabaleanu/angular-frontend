@@ -1,0 +1,35 @@
+<mat-drawer-container class="example-container" >
+    <mat-toolbar color="primary">
+        <button type="button" mat-button (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+          </button>
+ 
+      <p>Spotify</p>
+      <span class="example-spacer"></span>
+      <button type="button" mat-button (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        </button>
+    </mat-toolbar>
+
+<mat-drawer #drawer class="example-sidenav" mode="side">
+  <button type="button" color="primary"  mat-button (click)="viewAccountDetails()">
+    <p>Account</p>
+  </button>
+  <br>
+  <button type="button" color="primary"  mat-button (click)="viewPlaylist()">
+    <p>My playlist</p>
+  </button>
+  <br>
+
+  <button type="button" color="primary"  mat-button (click)="viewAllSongs()">
+    <p> Songs </p>
+  </button>
+
+</mat-drawer>
+
+
+<router-outlet></router-outlet>
+  
+ 
+
+
